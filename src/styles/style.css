@@ -30,10 +30,11 @@
     gap: 50px;
 }
 
-.nav-list li a {
+.nav-list li {
     text-decoration: none;
     color: var(--secondary-font-color);
     font-size: 20px;
+    cursor: pointer;
 }
 
 main .home-content {
@@ -50,9 +51,18 @@ main .home-content .greetings {
     letter-spacing: 6px;
 }
 
-main .home-content .name {
+main .about-content {
+    height: fit-content;
+    margin-top: 100px;
+    padding-block: 100px;
+    display: none;
+    justify-content: center;
+}
+
+.title {
     color: var(--primary-font-color);
     font-family: 'Fira Code', monospace;
     font-size: 100px;
     font-weight: 700;
 }
+
