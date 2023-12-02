@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter&display=swap');
 
 * {
     box-sizing: border-box;  
@@ -8,7 +8,8 @@
 }
 
 :root {
-    --secondary-font-color: #838383
+    --primary-font-color: #131313;
+    --secondary-font-color: #838383;
 }
 
 .navbar {
@@ -33,4 +34,25 @@
     text-decoration: none;
     color: var(--secondary-font-color);
     font-size: 20px;
+}
+
+main .home-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .home-content .greetings {
+    color: var(--primary-font-color);
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+main .home-content .name {
+    color: var(--primary-font-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 100px;
+    font-weight: 700;
 }
