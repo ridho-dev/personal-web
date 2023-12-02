@@ -39,7 +39,6 @@
 
 main .home-content {
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -51,11 +50,14 @@ main .home-content .greetings {
     letter-spacing: 6px;
 }
 
-main .about-content {
+main .about-content,
+main .education-content,
+main .experience-content,
+main .projects-content,
+main .contact-content {
     height: fit-content;
     margin-top: 100px;
     padding-block: 100px;
-    display: none;
     justify-content: center;
 }
 
@@ -64,5 +66,12 @@ main .about-content {
     font-family: 'Fira Code', monospace;
     font-size: 100px;
     font-weight: 700;
+}
+
+section {
+    display: none;
+}
+section.active {
+    display: flex
 }
 

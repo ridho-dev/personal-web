@@ -1,15 +1,23 @@
-const homeContent = document.getElementById('homeContent')
-const aboutContent = document.getElementById('aboutContent')
+const menuItems = ['Home', 'About', 'Education', 'Experience', 'Projects', 'Contact']
 
-const navHome = document.getElementById('navHome')
-const navAbout = document.getElementById('navAbout')
-
-navHome.addEventListener('click', () => {
-    homeContent.style.display = 'flex'
-    aboutContent.style.display = 'none'
+menuItems.forEach( item => {
+    let menuItem = document.getElementById(`nav${item}`)
+    menuItem.addEventListener('click', event => {
+        event.preventDefault()
+        changeContent(item.toLowerCase())
+    })
 })
 
-navAbout.addEventListener('click', () => {
-    homeContent.style.display = 'none'
-    aboutContent.style.display = 'flex'
-})
+function changeContent(sectionId) {
+    let allSections = document.querySelectorAll('main > section')
+
+    allSections.forEach(function(section) {
+        section.classList.remove('active')
+    })
+
+    let selectedSection = document.getElementById(`${sectionId}Content`)
+    if (selectedSection) {
+        console.log(`id: ${selectedSection.id}`)
+        selectedSection.classList.add('active')
+    }
+}
