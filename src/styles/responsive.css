@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+  .navbar ul {
+    gap: 30px;
+  }
+  .navbar ul li a {
+    font-size: 14px;
+  }  
+}
+
+@media screen and (max-width: 425px) {
+  .navbar ul {
+    gap: 20px;
+  }
+  .navbar ul li a {
+    font-size: 12px;
+  }  
+}
