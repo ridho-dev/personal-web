@@ -1,20 +1,89 @@
+@media screen and (max-width: 932px) {
+  main .home-section {
+    width: 70%;
+  }
+
+  main .home-section .greetings h1 {
+    font-size: 84px;
+    letter-spacing: -6px;
+  }
+
+  .home-about {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     height: 80px;
   }
-  .navbar ul {
-    gap: 30px;
-  }
+
   .navbar ul li a {
     font-size: 14px;
+    padding-inline: 24px;
+    padding-block: 10px;
   }  
+
+  main .home-section {
+    width: 75%;
+  }
+
+  main .home-section .greetings {
+    font-size: 28px;
+  }
+
+  main .home-section .greetings h1 {
+    font-size: 60px;
+    letter-spacing: -4px;
+  }
+
+  .home-about {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar ul li a {
+    font-size: 12px;
+    padding-inline: 18px;
+    padding-block: 12px;
+  }  
+
+  main .home-section {
+    width: 80%;
+  }
+
+  main .home-section .greetings {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+
+  main .home-section .greetings h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .home-about {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 425px) {
-  .navbar ul {
-    gap: 20px;
+  main .home-section {
+    width: 80%;
   }
-  .navbar ul li a {
+
+  main .home-section .greetings {
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+
+  main .home-section .greetings h1 {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+
+  .home-about {
     font-size: 12px;
-  }  
+  }
 }

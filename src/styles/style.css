@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
   box-sizing: border-box;  
   margin: 0;
   padding: 0;
-  font-family: 'Oxygen', sans-serif;
 }
 
 body {
   background-color: #EDE7DE;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .navbar {
@@ -27,9 +28,8 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 60px;
-  padding-block: 16px;
-  padding-inline: 48px;
+  padding-block: 14px;
+  padding-inline: 4px;
   background-color: #F4F1EB;
   border-radius: 50px;
 }
@@ -38,10 +38,14 @@ body {
   text-decoration: none;
   font-size: 18px;
   color: #566F6B;
+  padding-inline: 32px;
+  padding-block: 10px;
+  border-radius: 50px;
 }
 
 .navbar-active {
-  background-color: forestgreen;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 1s ease;
 }
 
 main {
@@ -56,6 +60,30 @@ main section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #025A4E;
+}
+
+main .home-section {
+  width: 70%;
+  font-size: 36px;
+  text-align: center;
+}
+
+main .home-section .greetings{
+  letter-spacing: -2px;
+  font-size: 36px;
+}
+
+main .home-section .greetings h1{
+  letter-spacing: -8px;
+  font-size: 108px;
+}
+
+.home-about {
+  font-size: 24px;
+  letter-spacing: 0;
+  color: #566F6B;
+  margin-top: 48px;
 }
 
 
@@ -66,3 +94,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+};
